@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Manuela Gómez",
+      "email": "manu@correo.co",
+      "gender": "Female",
+      "weight": 75.5,
+      "height": 182,
+      "phone": {
+        "mobile": "0000000000",
+        "office": "00000000"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Juan Jiménez",
+      "email": "juan@correo.co",
+      "gender": "Male",
+      "weight": 77.0,
+      "height": 183,
+      "phone": {
+        "mobile": "0000000000",
+        "office": "00000000"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Luisa Bazalar",
+      "email": "luisa@correo.co",
+      "gender": "Female",
+      "weight": 68.7,
+      "height": 175,
+      "phone": {
+        "mobile": "0000000000",
+        "office": "00000000"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Elisa",
+      "email": "elisa@correo.co",
+      "gender": "Female",
+      "weight": 62.3,
+      "height": 174,
+      "phone": {
+        "mobile": "0000000000",
+        "office": "00000000"
+      }
+    }
+  ]
+}
