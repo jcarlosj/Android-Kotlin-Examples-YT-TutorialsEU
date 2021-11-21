@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val recycler_view_items = findViewById<RecyclerView>( R.id.rv_data_list )
 
         // Configure el LayoutManager que utilizará este RecyclerView.
-        recycler_view_items.layoutManager = GridLayoutManager( this, 2 )
+        recycler_view_items.layoutManager = LinearLayoutManager( this )
 
         // Inicializa Adapter, se pasa el contexto y la lista como parámetro.
         val itemAdapter = ItemAdapter( this, getItemsList() )
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private fun getItemsList(): ArrayList<String> {
         val list = ArrayList<String>()
 
-        for( i in 1..40 ){
+        for( i in 1..20 ){
             list .add( "Item $i" )
         }
 
