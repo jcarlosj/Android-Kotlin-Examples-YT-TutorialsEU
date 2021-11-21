@@ -38,8 +38,8 @@ class UserAdapter( private val context: Context, private val items: ArrayList<Us
         holder.tvGender.text = item.gender
         holder.tvWeight.text = item.weight.toString()
         holder.tvHeight.text = item.height.toString()
-        holder.tvMobileNumber.text = item.mobile
-        holder.tvOfficeNumber.text = item.office
+        holder.tvMobileNumber.text = item.phone.mobile
+        holder.tvOfficeNumber.text = item.phone.office
     }
 
     /** Obtiene el número de elementos de la lista */
