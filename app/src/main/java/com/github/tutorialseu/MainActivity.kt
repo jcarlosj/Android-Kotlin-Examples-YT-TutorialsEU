@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val recycler_view_items = findViewById<RecyclerView>( R.id.rv_data_list )
 
         // Configure el LayoutManager que utilizará este RecyclerView.
-        recycler_view_items.layoutManager = LinearLayoutManager( this )
+        recycler_view_items.layoutManager = LinearLayoutManager( this, LinearLayoutManager.HORIZONTAL, false )
 
         // Inicializa Adapter, se pasa el contexto y la lista como parámetro.
         val itemAdapter = ItemAdapter( this, getItemsList() )
