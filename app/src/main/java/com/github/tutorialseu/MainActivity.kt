@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.tutorialseu.adapters.ItemAdapter
+import com.github.tutorialseu.models.DataModel
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +25,21 @@ class MainActivity : AppCompatActivity() {
         recycler_view_items.adapter = itemAdapter
     }
 
-    private fun getItemsList(): ArrayList<String> {
-        val list = ArrayList<String>()
+    private fun getItemsList(): ArrayList<DataModel> {
+        val list = ArrayList<DataModel>()
 
-        for( i in 1..20 ){
-            list .add( "Item $i" )
-        }
+        list.add( DataModel( "Item 1 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 2 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
+        list.add( DataModel( "Item 3 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 4 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
+        list.add( DataModel( "Item 5 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 6 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 7 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
+        list.add( DataModel( "Item 8 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 9 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
+        list.add( DataModel( "Item 10 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
+        list.add( DataModel( "Item 11 ViewType 1", ItemAdapter.VIEW_TYPE_ONE ) )
+        list.add( DataModel( "Item 12 ViewType 2", ItemAdapter.VIEW_TYPE_TWO ) )
 
         return list
     }
